@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.active {
+    background-color:#007BFF;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-container button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background-color: #0056b3;
+}
+.mybutton {
+    display: flex;
+    align-items: center;
+}
+.mybutton button {
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color:#0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.mybutton button:hover {
+    background-color: #0056b3;
+}
+.mybutton button:first-child {
+    margin-left: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-weight: normal;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: left;
+}
+table th,
+table td {
+    padding: 12px 15px;
+}
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+}
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+table button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+table button:hover {
+    background-color: #0056b3;
+}
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dialog-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+.dialog-content {
+    margin-top: 20px;
+}
+.dialog-button {
+    margin-top: 20px;
+    text-align: right;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3; /* 按钮颜色 */
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #004080; /* 按钮悬停颜色 */
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+dialog {
+    border: none;
+    padding: 20px;
+    background-color: #f9f9f9f9; /* 浅灰色背景 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    border-radius: 4px; /* 圆角边框 */
+    width: 300px; /* 对话框宽度 */
+    position: fixed; /* 固定定位 */
+    top: 50%; /* 距离顶部 50% */
+    left: 20%; /* 距离左侧 50% */
+    transform: translate(-50%, -50%); /* 向左和向上移动 50% */
+    /* 确保对话框的宽度不会超出视口 */
+    width: 400px; /* 或者您可以设置一个固定宽度，如 400px */
+    margin: auto; /* 居中对齐 */
+    height: auto; /* 高度自动 */
+    overflow: auto;
+}
+
+/* 对话框标题样式 */
+dialog h2 {
+    margin-top: 0;
+    color: #333; /* 深灰色标题 */
+}
+
+/* 表单元素样式 */
+dialog label {
+    display: block;
+    margin-top: 10px;
+    color: #555; /* 中等灰色标签 */
+}
+
+dialog input[type="text"],
+dialog input[type="number"] {
+    width: calc(100% - 22px); /* 减去内边距 */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* 浅灰色边框 */
+    border-radius: 4px; /* 圆角边框 */
+}
+
+/* 按钮样式 */
+dialog button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* 蓝色背景 */
+    color: white;
+    cursor: pointer;
+    width: calc(50% - 5px); /* 两个按钮并排 */
+}
+
+dialog button:hover {
+    background-color: #0056b3; /* 悬停时的深蓝色 */
+}
+
+/* 取消按钮样式 */
+dialog button[type="button"] {
+    background-color: #ccc; /* 灰色背景 */
+    color: #333; /* 深灰色文字 */
+}
+
+dialog button[type="button"]:hover {
+    background-color: #bbb; /* 悬停时的深灰色 */
+}
+
+/* 对话框按钮容器样式 */
+.dialog-button {
+    display: flex;
+    justify-content: space-between; /* 按钮之间的间隔 */
+    margin-top: 20px;
+}
+
+/* 关闭按钮样式 */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #007bff; /* 悬停时的蓝色 */
+}
+说明：
